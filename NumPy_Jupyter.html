@@ -1,1 +1,125 @@
-something wrong 
+
+
+# 1
+import numpy
+import numpy as np
+
+x=np.array([1,2,3,4])
+print(x)
+[1 2 3 4]
+
+## 1 time
+%timeit [j**4 for j in range(1,9)]
+916 ns ± 49.6 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
+import numpy as np
+
+# 1
+
+%timeit np.arange(1,9)**4
+4 µs ± 92.6 ns per loop (mean ± std. dev. of 7 runs, 100,000 loops each)
+#  ARRAY
+
+import numpy as n
+x=[1,2,3,4,5,6,7]
+y = np.array(x)
+print(y)
+print(type(y))
+[1 2 3 4 5 6 7]
+
+<class 'numpy.ndarray'>
+ 
+# 1 
+l = []
+for i in range(1,5):
+    int_1 = int(input("Enter :"))
+    l.append(int_1)
+
+print(np.array(l))
+[  12   12  121 2121]
+  
+#  Random
+
+#   1.Rand()
+import numpy as np 
+var = np.random.rand(4)
+print(var)
+[0.08379828 0.84669629 0.78060754 0.61340057]
+var = np.random.rand(2,7)
+print(var)
+
+  # output:
+  
+[[0.47881616 0.12537309 0.32410794 0.43717953 0.23728821 0.93801819
+  0.05740505]
+ [0.45980331 0.67352012 0.12912504 0.91836301 0.65987997 0.29090259
+  0.74865695]]
+  
+# 2.Randn()
+
+import numpy as np 
+var = np.random.randn(4)
+print(var)
+[-0.87943444 -1.07735884  0.45136442  1.50928541]
+import numpy as np 
+var = np.random.randn(4,10)
+print(var)
+[[-0.45036776  1.06305483  0.95291961 -0.14922667 -0.77593005  1.30834862
+   0.01203736 -2.67459843 -0.08971505 -1.76468694]
+ [ 0.51951041  0.42966187  1.43722957  0.3306704   2.51861481  1.94039016
+  -1.4001519  -0.2091351  -0.29982718  0.36039211]
+ [-1.12199892 -1.02934883  1.06007703 -1.18170302  0.75839836  0.05734245
+  -0.14157759  0.48761797  0.72429142 -0.4889987 ]
+ [-0.48973534  0.38849712 -1.07181402 -0.24237908 -0.13085419 -1.75081799
+   1.48485483  0.79280812  0.8116478   1.77823242]]
+# Ranf()  floting
+
+import numpy as np 
+var = np.random.ranf(4)
+print(var)
+[0.6498349  0.16353979 0.84657273 0.76276379]
+import numpy as np 
+var = np.random.ranfS(4,10)
+print(var)
+
+import numpy as np 
+var = np.random.ranf(14)
+print(var)
+[0.19933315 0.76307787 0.56710473 0.2409273  0.38034626 0.90908319
+ 0.9220362  0.70132684 0.34323637 0.04982887 0.17835736 0.2222206
+ 0.91980127 0.01001735]
+# 4.  randint()
+
+import numpy as np 
+var = np.random.randint(4,10)
+print(var)
+4
+import numpy as np 
+var = np.random.randint(4,10,10)
+print(var)
+[9 5 6 5 4 5 6 4 4 5]
+#Data TypeS
+
+# 10-20 different data type like int float complex 16,32,64 bits
+
+import numpy as np
+
+var = np.array([1,2,3,4])
+print("Data type: ",var.dtype)
+Data type:  int32
+# string
+
+import numpy as np
+
+var = np.array(["A","B","c","D",1,12,3,4,5])
+print("Data type: ",var.dtype)
+Data type:  <U11
+import numpy as np
+
+var = np.array([1.12,2.343,3.23232,4.23])
+print("Data type: ",var.dtype)
+Data type:  float64
+import numpy as np
+
+var = np.array(["a",1,1.3,True])
+print("Data type: ",var.dtype)
+Data type:  <U32
